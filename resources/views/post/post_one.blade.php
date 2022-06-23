@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('title')
-    {{$author->name}}
+    {{$user->name}}
 @endsection
 @section('content')
     <h1><i>Author</i></h1>

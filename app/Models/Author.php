@@ -19,8 +19,5 @@ class Author extends Model implements HasMedia
         'surname',
         'age'
     ];
-    function posts()
-    {
-        return $this->hasMany(Post::class);
-    }
+
 }

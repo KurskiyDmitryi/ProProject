@@ -21,6 +21,6 @@ class Post extends Model implements HasMedia
 
     public function author()
     {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(User::class);
     }
 }

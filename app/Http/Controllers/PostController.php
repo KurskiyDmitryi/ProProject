@@ -10,12 +10,12 @@ class PostController extends Controller
 {
     function post_one($id)
     {
-        $post = Post::with('author')->find($id);
+        $post = Post::with('user')->find($id);
         $author_id = $post->author_id;
         $author = Author::find($author_id);
         $post->images = $post->getMedia('post_images');
 
-        return view('post.post_one',['post'=>$post,'author'=>$author]);
+        return view('post.post_one',['post'=>$post,'user'=>$author]);
     }
     function post_images_upload(Request $request,$id)
     {

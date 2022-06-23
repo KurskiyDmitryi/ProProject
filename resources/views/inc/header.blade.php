@@ -14,8 +14,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="{{route('author_list')}}">Author List</a>
+                <a class="nav-link active" aria-current="page" href="{{route('user_list')}}">Author List</a>
                 <a class="nav-link active" aria-current="page" href="{{route('image_train')}}">Train</a>
+                <a class="nav-link active" style="color:red" aria-current="page" href="{{route('login')}}">Login</a>
             </div>
         </div>
     </div>
